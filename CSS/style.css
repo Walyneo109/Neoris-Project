@@ -1,0 +1,77 @@
+
+.first{
+
+    background-color: beige;
+    padding: 25px;
+    
+}
+.conteiner-first{
+text-align:left;
+
+}
+.conteiner-card{
+    display: inline-flex;
+}
+.carrousell{
+    display: inline-flex;
+  
+}
+.second{
+margin: auto;
+
+}
+.productos{
+    display: inline-flex; 
+    
+
+}
+.productos .card{
+   margin: 50px;
+   
+}
+.icons-productos{
+
+ padding: 25px;
+}
+.icons-productos img{
+    background-color: antiquewhite;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+
+.third{
+background-color: brown;
+padding: 25px;
+margin: auto;
+text-align: center;
+}
+.third .conteiner{
+   display: inline-flex;
+}
+.comentarios form {
+   margin: auto;
+   width: 400px;
+   margin-top: 100px;
+   padding: 30px;
+    
+}
+.RedesSociales{
+
+    padding: 25px;
+   }
+   .RedesSociales img{
+       background-color: antiquewhite;
+       border-radius: 50%;
+       width: 50px;
+       height: 50px;
+       margin: 50px;
+   }
+footer{
+    
+    background: black;
+    margin: auto;
+    padding: auto;
+   
+}
