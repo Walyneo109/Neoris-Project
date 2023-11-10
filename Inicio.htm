@@ -8,6 +8,8 @@
     <title>Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/JS/slides.js" defer></script>
+</body>
 </head>
 <body>
   <header>
@@ -64,12 +66,27 @@
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
-        </div></div>
-        
-        <div class="carrousell">
-          <img src="./Img/Sillla.jpg" alt="">
         </div>
       </div>
+      <div class="carousel-conteiner">
+          <div class="slideshow-container">
+          
+        <div class="carrousell fad">
+          <img src="./Img/Sillla.jpg"  style="width: 100%;" >
+        </div>
+        <div class="carrousell fad" >
+          <img src="/Img/Mesa.png" style="width: 100%;">
+        </div>
+        <a  class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a  class="next" onclick="plusSlides(1)">&#10095</a>
+      </div>
+      <br>
+      <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+        </div>
       </section>
 
       <section class="second">
@@ -109,7 +126,6 @@
         </div>
       </section>
 
-  
       <section class="third">
         <div class="conteiner">
           <div class="row">
@@ -124,18 +140,36 @@
         </div>
           <div class="row">
             <div class="conteiner-form"></div>
+
           <div class="comentarios">
             <p>comentarios</p>
-            <form action="">
-              
-              <input type="text" name="nombre" id="nombre" >
-              <input type="datetime" name="fecha" id="fecha" hidden> 
-              <input type="email" name="email" id="email">
-              <textarea name="area" id="area" cols="30" rows="10"> Escribir algo</textarea>
-              <input type="button" value="Publicar">
-
+            <form id="Comentary" action="">
+          <div class="tab"> Nombres
+            <p><input type="text" placeholder="Inserte su nombre " oninput="this.className= '' "> </p>
+            <p><input type="text" placeholder="Inserte su apellido"oninput="this.className= '' " ></p>
+          </div>
+          <div class="tab"> Datos
+            <p><input type="email" placeholder="Inserte su email " oninput="this.className = '' "></p>
+            <p><input type="text"placeholder="Inserte su Provincia " oninput="this.className = ''"></p>
+          </div>
+          <div class="tab"> Reseña
+            <p><input type="text" placeholder="Inserte un Titulo"  oninput="this.className = '' "></p>
+            <p><input type="text" placeholder="Inserte un Comentario" oninput="this.className = '' " ></p>
+          </div>
+          <div style="overflow: auto;">
+          <div style=" float: right;">
+            <button type="button" id="prevBtn" onclick=" nextPrev(-1)">Volver</button>
+            <button type="button" id="nextBtn" onclick=" nextPrev(1)">Siguiente </button>
+          </div>
+        </div>
+          <div style="text-align:center; margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>          
+        </div>
             </form>
           </div>
+        </div>
         </div>
        <div class="RedesSociales">
         <img src="./Img/whatsapp.png" alt=""> 
@@ -143,11 +177,9 @@
         <img src="./Img/facebook.png" alt="">
         
        </div>
-        </div>
+       
       </section>
-
       <footer>
-
       </footer>
-</body>
+      
 </html>

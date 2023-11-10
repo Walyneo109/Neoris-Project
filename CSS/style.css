@@ -1,22 +1,75 @@
-
+ *{
+    width: 100%;
+    height: auto;
+ }
 .first{
-
+ width: 100%;
+ height: auto;
     background-color: beige;
     padding: 25px;
-    
 }
 .conteiner-first{
-text-align:left;
-
-}
+  width: 100%;
+ display: inline-flex;
+} 
 .conteiner-card{
-    display: inline-flex;
+}
+
+
+.slideshow-container{    
+    max-width: 500px;
+    position: relative;
+    margin: auto;
 }
 .carrousell{
-    display: inline-flex;
-  
+    display: none; 
 }
+.prev, .next{
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: 0;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .fad {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 .second{
+   
 margin: auto;
 
 }
@@ -46,16 +99,64 @@ background-color: brown;
 padding: 25px;
 margin: auto;
 text-align: center;
+width: 100%;
+height: auto;
 }
 .third .conteiner{
    display: inline-flex;
 }
-.comentarios form {
-   margin: auto;
-   width: 400px;
-   margin-top: 100px;
-   padding: 30px;
-    
+/* Formulario*/
+#Comentary{
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 50px;
+  width: 90%;
+  min-width: 500px;
+}
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+input.invalid {
+  background-color: #ffdddd;
+}
+
+#prevBtn,#nextBtn{
+ width: 200px;
+ border: none;
+ border-radius: 5px;
+ transition: 0.6s ease;
+}
+#nextBtn{
+  background-color: #00fc9f;
+}
+#prevBtn:hover,#nextBtn:hover{
+  background-color: rgb(28, 255, 28);
+}
+.tab {
+  display: none;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #04AA6D;
 }
 .RedesSociales{
 
