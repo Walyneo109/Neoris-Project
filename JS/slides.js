@@ -26,6 +26,20 @@ function showSlides(n){
     dots[slideIndex-1].className += " active";
 }
 
+/*Carousel de prodcutos */ 
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swipe",
+    clickable: true,
+  },
+   navigation: {
+    nextEl: '.sbn',
+    prevEl: '.sbp',
+  },
+});
+
 /* Formularios  */
 let currentTab = 0;
 showTab(currentTab);
@@ -54,7 +68,9 @@ function nextPrev(n) {
     currentTab = currentTab + n;
 if (currentTab >=x.length) {
    document.getElementById("Comentary").submit();
-   window.alert("Gracias por su reseña");
+   let name = document.getElementById("nombre").value;
+   let surname = document.getElementById("apellido").value;
+   window.alert( name +" "+ surname +' \n ' + "Gracias por su reseña ♥!!");
    return false; 
   }
   showTab(currentTab);
