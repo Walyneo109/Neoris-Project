@@ -9,19 +9,21 @@
   flex-direction: column;
   min-height: 100%;
  }
-
 .first{
+  background-color: white;
  width: 100%;
  height: auto;
-    padding: 25px;   
+  padding: 25px; 
+  margin-top: 70px;  
+  border-bottom: 1px solid;
+  border-color: white;
 }
 .conteiner-first{
   width: 100%;
  display: inline-flex;
  justify-content: space-around ;
+
 } 
-
-
 .slideshow-container{    
     max-width: 500px;
     position: relative;
@@ -93,8 +95,13 @@ user-select: 0;
 }
 
 .second{
+  background-color: whitesmoke;
     width: 100%;
     height: 800px;
+    padding: 25px;
+    border-bottom: 1px solid;
+    border-color: white;
+   
 }
 .contenedor-productos{
   width: 100%;
@@ -102,33 +109,34 @@ user-select: 0;
 .productos{
   width: 100%;
     display: flex;
-    flex-wrap: wrap; 
-    text-align: center;
-    padding-left: 20px;
+    flex-wrap: wrap;   
+    padding-left: 30px;
 }
 .productos .card{
  height: 500px; 
 }
+.productos .card .btn-producto{
+  text-align: center;
+  bottom: 50px;
+ }
 .productos .card img{
   width: 250px;
   height: 300px;
-  align-self: center;
+  margin-left: 20px;
  }
  .swiper {
-    width: 44300px;
+    width: 100%;
 }
 .swip{  
   text-align: center;
   width: 100%;
   height: 50px;
-  padding: 20px;
+ 
 }
-
 .icons-productos{
     display:flex ;
   justify-content: center;
-  width: 2000px;
-  border: 1px solid;
+  width: 100%;
  padding: 25px;
 }
 .icons-productos img{
@@ -140,7 +148,7 @@ user-select: 0;
 }
 
 .third{
-background-color: brown;
+  background-color: rgb(206, 206, 206);
 padding: 25px;
 margin: auto;
 text-align: center;
@@ -151,16 +159,30 @@ height: auto;
    display: inline-flex;
 }
 .ubicacion{
+  padding-top: 15px;
  width: 500px;
 }
 .contacto{
+  padding-top: 20px;
   width: 500px;
-  
+}
+.contact{
+  border-left: 2px solid ;
+  border-left-color: #bbbbbb;
+  border-right: 2px solid ;
+  border-right-color: #bbbbbb;
+  background-color: whitesmoke;
+  padding: 30px;
+  width: 500px;
+  height: 336px;
+  text-align: center;
+  justify-content: center;
 }
 /* Formulario*/
 #Comentary{
-  background-color: #ffffff;
-  margin: 100px auto;
+  /*background-color: #ffffff;*/
+  background-color:whitesmoke;
+  margin: 20px auto;
   padding: 50px;
   width: 90%;
   min-width: 500px;
@@ -206,12 +228,10 @@ input.invalid {
 .step.active {
   opacity: 1;
 }
-
 .step.finish {
   background-color: #04AA6D;
 }
 .RedesSociales{
-
     padding: 25px;
       display:flex ;
   justify-content: center;
@@ -219,8 +239,8 @@ input.invalid {
    .RedesSociales img{
        background-color: antiquewhite;
        border-radius: 50%;
-       width: 50px;
-       height: 50px;
+       width: 70px;
+       height: 70px;
        margin: 50px;
    }
 footer{
@@ -234,5 +254,4 @@ footer{
 .foot{
   color: white;
   text-align: center;
-
 }
